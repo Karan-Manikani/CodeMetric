@@ -8,6 +8,9 @@ export default {
         secondary: "#1D1D1D",
         logo: "#57A773",
       },
+      fontFamily: {
+        secondary: "Noto Sans JP",
+      },
     },
   },
   plugins: [],

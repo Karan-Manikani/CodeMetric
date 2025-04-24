@@ -1,13 +1,13 @@
 import { RequestMessage, ResponseMessage } from "../types";
 
-const extractCode = (callback: (response: ResponseMessage<string>) => void) => {
+const extractCode = (callback: (response: ResponseMessage<string | null>) => void) => {
   const targetSpan = document.querySelectorAll("span[data-e2e-locator]")[0];
 
   if (!targetSpan) {
-    const response: ResponseMessage<string> = {
+    const response: ResponseMessage<string | null> = {
       from: "CONTENT",
       to: "POPUP",
-      content: "No Submission found",
+      content: null,
     };
 
     callback(response);
@@ -16,10 +16,10 @@ const extractCode = (callback: (response: ResponseMessage<string>) => void) => {
   const containerDiv = targetSpan.closest("div[data-layout-path]");
   const codeBlock = containerDiv?.querySelector("code");
 
-  const response: ResponseMessage<string> = {
+  const response: ResponseMessage<string | null> = {
     from: "CONTENT",
     to: "POPUP",
-    content: codeBlock?.innerText || "No submission found.",
+    content: codeBlock?.innerText || null,
   };
 
   callback(response);
