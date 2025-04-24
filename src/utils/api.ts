@@ -5,7 +5,6 @@ import { ModelResponse } from "../types";
 
 export const queryLLM = async (code: string): Promise<ModelResponse | null> => {
   const AI = new GoogleGenAI({ apiKey: config.API_KEY });
-  console.log("Querying LLM...");
   const response = await AI.models.generateContent({
     model: "gemini-2.0-flash",
     contents: generatePrompt(code),
