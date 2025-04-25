@@ -6,7 +6,7 @@ Whether you're prepping for interviews or sharpening your algorithmic thinking, 
 
 ## 💬 Example Suggestion
 
-CodeMetric automatically detects when your submission is not optimal. Here's an example using the LeetCode problem <a href="">141. Linked List Cycle</a>:
+CodeMetric automatically detects when your submission is not optimal. Here's an example using the LeetCode problem <a href="https://leetcode.com/problems/linked-list-cycle/description/">141. Linked List Cycle</a>:
 
 ### Submitted Code
 
@@ -71,9 +71,9 @@ npm install
 npm run build
 ```
 
-This will compile the project and generate a /dist folder with the packaged Chrome extension.
+This will compile the project and generate a `/dist` folder with the packaged Chrome extension.
 
-### 4. Load the chrome extension
+### 4. Load the Chrome extension
 
 1. Open Chrome and go to `chrome://extensions/`
 2. Enable Developer Mode (top-right toggle)
