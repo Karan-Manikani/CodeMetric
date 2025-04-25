@@ -10,8 +10,8 @@ export const generatePrompt = (code: string): string => {
   * "space"
   * "time_vars": Brief explanation of time complexity variables, or null if constant
   * "space_vars" Brief explanation of space complexity variables, or null if constant
-  * "time_improvements" Suggested improvements only if they improve Big-O time complexity; else null
-  * "space_improvements" Suggested improvements only if they improve Big-O space complexity; else null
+  * "time_improvements" Suggested improvements in 5-6 lines only if they improve Big-O time complexity; else null
+  * "space_improvements" Suggested improvements in 5-6 lines only if they improve Big-O space complexity; else null
    
   Code:
   
