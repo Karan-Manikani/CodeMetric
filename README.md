@@ -33,7 +33,7 @@ CodeMetric flags this solution as:
 
 The extension suggests improving the space complexity by using a two-pointer approach, reducing the space down to `O(1)`.
 
-<img src="./screenshots/space.png" />
+<img src="./screenshots/space.png" height="300" />
 
 ## 🛠️ Installation & Setup
 
